@@ -12,7 +12,7 @@ class accountpage:
 
     def __init__(self,driver):
         self.driver=driver
-        self.driver.implicitly_wait(4)
+        time.sleep(5)
 
     def setfirstname(self,frstname):
         self.driver.find_element(By.NAME, self.txt_first_name).send_keys(frstname)
