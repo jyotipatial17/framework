@@ -9,7 +9,7 @@ class search():
     time.sleep(4)
     def __init__(self,driver):
         self.driver=driver
-        self.driver.implicity_wait(4)
+        time.sleep(4)
 
     def search_txt(self,txt):
         self.driver.find_element(By.NAME, self.search_box).send_keys(txt)
