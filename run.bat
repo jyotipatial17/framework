@@ -1,2 +1,2 @@
-pytest -v -s testcase --browser chrome
+pytest -v -s framework\testcase --browser chrome
 
