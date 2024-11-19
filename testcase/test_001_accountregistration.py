@@ -11,7 +11,7 @@ class Test_001:
     #Create an instance of RawConfigParser
     config=configparser.RawConfigParser()
     # Read the config file
-    config.read(os.path.abspath(os.curdir)+ r'\\config\\config.ini')
+    config.read(os.path.abspath(os.curdir)+ r'\\framework\\config\\config.ini')
     # Access values from the config file
     url=(config.get('commonInfo', 'baseurl'))
     logger = loggen.log_txt()
