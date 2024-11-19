@@ -8,7 +8,7 @@ import os
 
 class Test_001:
     config=configparser.RawConfigParser()
-    config.read(os.path.abspath(os.curdir)+ r'\\config\\config.ini')
+    config.read(os.path.abspath(os.curdir)+ r'\\framework\\config\\config.ini')
     url=(config.get('commonInfo', 'baseurl'))
     logger = loggen.log_txt()
     def test_search_item(self,setup):
@@ -22,7 +22,7 @@ class Test_001:
         Search.obj4 = Search.search(self.driver)
 
 
-        file =(os.path.abspath(os.curdir)+ r'\\testdata\\data.xlsx')
+        file =(os.path.abspath(os.curdir)+ r'\\framework\\testdata\\data.xlsx')
         rows = utl.getRowCount(file, "Sheet2")
         # fetching data from excel ..for 1 row move to column...1,2,3,4,5,6
         for r in range(2, rows + 1):
