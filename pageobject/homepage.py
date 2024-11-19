@@ -8,7 +8,7 @@ class homep:
     subm_butn='//*[@id="SubmitCreate"]'
     def __init__(self,driver):
         self.driver=driver
-        self.driver.implicity_wait(5)
+        self.driver.implicitly_wait(5)
 
     def setregistlogin(self,email):
         time.sleep(5)
